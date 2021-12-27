@@ -20,15 +20,7 @@ public class MainActivity2 extends AppCompatActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_main2);
 
         getSupportActionBar().hide();
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
-                startActivity(intent);
-                finish();
-            }
-        },8000);
+
 
         spinner=findViewById(R.id.spinner1);
         spinner2=findViewById(R.id.spinner2);
